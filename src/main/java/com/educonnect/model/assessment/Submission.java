@@ -1,9 +1,10 @@
 package com.educonnect.model.assessment;
 
-import com.educonnect.model.user.Student;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDateTime;
+
+import com.educonnect.model.user.student.Student;
 
 @Entity
 @Data

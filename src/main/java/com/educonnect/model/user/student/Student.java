@@ -1,6 +1,9 @@
-package com.educonnect.model.user;
+package com.educonnect.model.user.student;
 
 import com.educonnect.model.course.Enrollment;
+import com.educonnect.model.user.Parent;
+import com.educonnect.model.user.User;
+
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -23,4 +26,7 @@ public class Student extends User {
     // Links to Academic Records (Cross-package relationship)
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
     private List<Enrollment> enrollments;
+
+    @OneToOne(mappedBy = "student", cascade = CascadeType.ALL)
+    private StudentDocument studentDocument;
 }

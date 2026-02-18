@@ -1,7 +1,8 @@
 package com.educonnect.model.attendance;
 
 import com.educonnect.model.course.Course;
-import com.educonnect.model.user.Student;
+import com.educonnect.model.user.student.Student;
+
 import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDate;

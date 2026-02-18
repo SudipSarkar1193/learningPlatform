@@ -1,6 +1,7 @@
 package com.educonnect.model.course;
 
-import com.educonnect.model.user.Student;
+import com.educonnect.model.user.student.Student;
+
 import jakarta.persistence.*;
 import lombok.Data;
 

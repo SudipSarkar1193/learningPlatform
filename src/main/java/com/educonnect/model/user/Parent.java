@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import java.util.List;
 
+import com.educonnect.model.user.student.Student;
+
 @Entity
 @Data
 @EqualsAndHashCode(callSuper = true)
